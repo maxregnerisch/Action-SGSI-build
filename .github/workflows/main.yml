@@ -41,7 +41,7 @@ jobs:
       - name: Install necessary tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y git wget zip unzip curl
+          sudo apt-get install -y git wget zip unzip curl python2
 
       - name: Get the SGSI tool
         run: |
