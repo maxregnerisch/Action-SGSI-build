@@ -68,7 +68,6 @@ jobs:
           y
           ${{ github.event.inputs.OS_TYPE }}
           y
-EOF
 
       - name: Pack System Image (AB)
         if: ${{ github.event.inputs.SGSI_TYPE }} == 'AB' || ${{ github.event.inputs.SGSI_TYPE }} == 'BOTH'
@@ -87,8 +86,7 @@ EOF
           y
           ${{ github.event.inputs.OS_TYPE }}
           y
-EOF
-
+          
       - name: Pack System Image (A-only)
         if: ${{ github.event.inputs.SGSI_TYPE }} == 'A' || ${{ github.event.inputs.SGSI_TYPE }} == 'BOTH'
         run: |
